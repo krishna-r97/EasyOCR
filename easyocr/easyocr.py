@@ -28,7 +28,7 @@ LOGGER = getLogger(__name__)
 
 class Reader(object):
 
-    def __init__(self, lang_list, gpu=True, model_storage_directory=None,
+    def __init__(self, opt, lang_list, gpu=True, model_storage_directory=None,
                  user_network_directory=None, detect_network="craft", 
                  recog_network='standard', download_enabled=True, 
                  detector=True, recognizer=True, verbose=True, 
@@ -224,7 +224,7 @@ class Reader(object):
                     }
             else:
                 network_params = recog_config['network_params']
-            self.recognizer, self.converter = get_recognizer(recog_network, network_params,\
+            self.recognizer, self.converter = get_recognizer(opt, recog_network, network_params,\
                                                          self.character, separator_list,\
                                                          dict_list, model_path, device = self.device, quantize=quantize)
 

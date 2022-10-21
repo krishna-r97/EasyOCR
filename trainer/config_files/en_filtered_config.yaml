@@ -43,3 +43,13 @@ decode: 'greedy'
 new_prediction: False
 freeze_FeatureFxtraction: False
 freeze_SequenceModeling: False
+
+network_params:
+  input_channel: 1
+  output_channel: 256
+  hidden_size: 256
+imgH: 64
+lang_list:
+         - 'en'
+character_list: 0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ €ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+num_class: 97
