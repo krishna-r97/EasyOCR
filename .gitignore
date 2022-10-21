@@ -109,3 +109,8 @@ ENV/
 .idea/
 
 test_images/
+
+user_network/custom_model.py
+user_network/custom_model.yaml
+
+model/custom_model.pth
